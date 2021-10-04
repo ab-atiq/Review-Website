@@ -5,22 +5,29 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 const Header = () => {
 
-    const activeStyle={
+    const activeStyle = {
         fontWeight: "bold",
         color: "red",
-        fontSize:'20px'
-      };
+        fontSize: '20px',
+        textDecoration:'underline'
+    };
+
+    const itemStyle={
+        padding:'10px',
+        fontSize:'20px',
+        textDecoration:'none'
+    }
 
     return (
         <div>
             <Container>
-                <Row className="">
-                    <Col><img src="/public/favicon.ico" alt="icon" /></Col>
+                <Row className="" style={{margin:'5px',padding:'10px'}}>
+                    <Col><h2 style={{color:'blue'}}>AR institute</h2></Col>
                     <Col>
-                        <NavLink activeStyle={activeStyle} to="/home">Home</NavLink>
-                        <NavLink activeStyle={activeStyle} to="/course">Course</NavLink>
-                        <NavLink activeStyle={activeStyle} to="/services">Services</NavLink>
-                        <NavLink activeStyle={activeStyle} to="/about">About</NavLink>
+                        <NavLink activeStyle={activeStyle} style={itemStyle} to="/home">Home</NavLink>
+                        <NavLink activeStyle={activeStyle} style={itemStyle} to="/course">Course</NavLink>
+                        <NavLink activeStyle={activeStyle} style={itemStyle} to="/services">Services</NavLink>
+                        <NavLink activeStyle={activeStyle} style={itemStyle} to="/about">About</NavLink>
                     </Col>
                 </Row>
             </Container>

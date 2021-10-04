@@ -7,4 +7,6 @@
 .service{
     border: 1px solid yellow;
     padding: 20px;
+    background-color: skyblue;
+    border-radius: 20px;
 }

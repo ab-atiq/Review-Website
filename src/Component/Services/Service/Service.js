@@ -4,7 +4,7 @@ const Service = (props) => {
     const { id, services } = props.service;
     return (
         <div className='service'>
-            <h4>Service: {id}</h4>
+            <h4>Service No: {id}</h4>
             <h3>{services}</h3>
         </div>
     )

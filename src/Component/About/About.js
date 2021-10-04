@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Card, Button, Container } from 'react-bootstrap';
 import Footer from '../../Footer/Footer';
 import Header from '../Header/Header';
 import './About.css'
@@ -12,27 +13,32 @@ const About = () => {
     return (
         <div>
             <Header></Header>
-            <h1>This is About Us.</h1>
-            <div className="about">
-                {
-                    about.map(element => <Element key={element.id} element={element}></Element>)
-                }
-            </div>
+                <h1>Our All Teacher</h1>
+                <div className="about">
+                    {
+                        about.map(element => <Element key={element.id} element={element}></Element>)
+                    }
+                </div>
             <Footer></Footer>
         </div>
     );
 };
 
 const Element = (props) => {
-    const { teacher,phone,email,study,image } = props.element;
+    const { teacher, phone, email, study, image } = props.element;
     return (
-        <div className='element'>
-            <img src={image} alt="" />
-            <h5>Name: {teacher}</h5>
-            <h5>Phone: {phone}</h5>
-            <h5>Email: {email}</h5>
-            <h5>Study: {study}</h5>
-        </div>
+            <Card style={{ width: '25rem' }}>
+                <Card.Img variant="top" src={image} style={{ height: '350px' }} />
+                <Card.Body>
+                    <Card.Title variant='image-fluid'>Name: {teacher} </Card.Title>
+                    <Card.Text>
+                        He conplete his Study from {study}
+                    </Card.Text>
+                    <Card.Title>Email: {email} </Card.Title>
+                    <Card.Title>Phone: {phone} </Card.Title>
+                    <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+            </Card>
     )
 }
 
