@@ -27,7 +27,7 @@ const About = () => {
 const Element = (props) => {
     const { teacher, phone, email, study, image } = props.element;
     return (
-            <Card style={{ width: '25rem' }}>
+            <Card>
                 <Card.Img variant="top" src={image} style={{ height: '350px' }} />
                 <Card.Body>
                     <Card.Title variant='image-fluid'>Name: {teacher} </Card.Title>

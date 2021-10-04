@@ -23,7 +23,7 @@ const SubCourse = () => {
 const AllCourse = (props) => {
     const { image, teacher, title, fee } = props.course;
     return (
-        <Card style={{ width: '25rem' }}>
+        <Card>
             <Card.Img variant="top" src={image} />
             <Card.Body>
                 <Card.Title>Course Name: {title} </Card.Title>
