@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div bg="primary">
             <h1>This is footer section.</h1>
-            <h2>My name is Atiqur Rahman.</h2>
+            {/* <h2>My name is Atiqur Rahman.</h2> */}
         </div>
     );
 };

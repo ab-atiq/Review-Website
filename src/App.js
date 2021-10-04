@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'react-bootstrap';
 import { BrowserRouter,Switch,Route } from 'react-router-dom';
 import Home from './Component/Home/Home';
 import Course from './Component/Course/Course';
